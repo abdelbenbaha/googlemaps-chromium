@@ -2,7 +2,7 @@
 
 Delphi Example on how to use Google map api using [Chromium Embeded Framework](https://bitbucket.org/chromiumembedded/cef/src/master/).
 
-It was developed and tested on Delphi 7, Delphi 10.4.2 community edition.
+It was developed and tested on Delphi 7 and Delphi 10.4.2 community edition.
 
 ## Features
 
@@ -27,3 +27,10 @@ CEF binaries are available for download at Spotify:
 This Example uses the following components:
 
 - [CEF4Delphi](https://github.com/salvadordf/CEF4Delphi)
+
+## Links
+
+- [CEF](https://bitbucket.org/chromiumembedded/)
+- [CEF4Delphi](https://github.com/salvadordf/CEF4Delphi)
+- [gmlib_v1](https://github.com/cadetill/gmlib_v1)
+- [gmlib_v2](https://github.com/cadetill/gmlib_v2)
