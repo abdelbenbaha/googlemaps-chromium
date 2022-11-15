@@ -1,6 +1,6 @@
 # Google Maps API with Chromium
 
-Delphi Example on how to use Google map api using [Chromium Embeded Framework](https://bitbucket.org/chromiumembedded/cef/src/master/).
+Delphi Example on how to use GoogleMaps API using [Chromium Embeded Framework](https://bitbucket.org/chromiumembedded/cef/src/master/).
 
 It was developed and tested on Delphi 7 and Delphi 10.4.2 community edition.
 
