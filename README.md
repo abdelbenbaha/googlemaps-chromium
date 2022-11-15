@@ -23,5 +23,6 @@ CEF binaries are available for download at Spotify:
 
 
 ## Components
-This Example uses the followinf components:
+This Example uses the following components:
+
 - [CEF4Delphi](https://github.com/salvadordf/CEF4Delphi)
