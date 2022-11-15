@@ -6,7 +6,7 @@ It was developed and tested on Delphi 7 and Delphi 10.4.2 community edition.
 
 ## Features
 
-- Geocoding any address into geographic coordinates (latitude and longitude).
+- Geocode any address into geographic coordinates (latitude and longitude).
 - Embed a Google Maps image on your web page without requiring JavaScript.
 - Build interactive and dynamic maps using Google Maps Javascript API.
 - Save maps into JPEG files.
