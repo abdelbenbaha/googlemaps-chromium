@@ -50,8 +50,9 @@ procedure TfrmEdit.FormShow(Sender: TObject);
 var fs:TFileStream;
     html:string;
 begin
-lat:='';
-lng:='';
+if lat='' then lat:=frmmain.edtLat.Text;
+if lng='' then lng:=frmmain.edtLong.Text;
+
 if FileExists(frmmain.htmlDir+'map.html') then
  with TStringStream.Create('') do
   try
@@ -60,8 +61,8 @@ if FileExists(frmmain.htmlDir+'map.html') then
     CopyFrom(fs,fs.Size);
     html:=DataString;
     html:=StringReplace(html,'%API_KEY%',frmmain.edtApi.Text,[]);
-    html:=StringReplace(html,'%LAT%',frmmain.edtLat.Text,[]);
-    html:=StringReplace(html,'%LNG%',frmmain.edtLong.Text,[]);
+    html:=StringReplace(html,'%LAT%',lat,[]);
+    html:=StringReplace(html,'%LNG%',lng,[]);
     html:=StringReplace(html,'%MAPTYPE%',QuotedStr(mapTypes[grpMaps.Itemindex]),[]);
     Chromium.LoadString(html);
     finally
