@@ -49,7 +49,8 @@ object frmEdit: TfrmEdit
       Height = 389
       Align = alClient
       TabOrder = 0
-      DoubleBuffered = False
+      ExplicitLeft = 1
+      ExplicitTop = 11
     end
   end
   object GroupBox2: TGroupBox
@@ -80,6 +81,6 @@ object frmEdit: TfrmEdit
   end
   object Chromium: TChromium
     OnConsoleMessage = ChromiumConsoleMessage
-    Left = 96
+    Left = 8
   end
 end

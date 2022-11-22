@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, XPMan, StdCtrls,ExtCtrls,
+  Dialogs,  StdCtrls,ExtCtrls,
   uCEFApplication, uCEFUrlRequestClientComponent,uCEFUrlRequest,uCEFRequest,uCEFInterfaces,uCEFTypes,
   uCEFChromiumCore, uCEFChromium, uCEFWinControl, uCEFWindowParent,
    uCEFLinkedWinControlBase, uCEFChromiumWindow;
@@ -21,7 +21,6 @@ staticApiURL='https://maps.googleapis.com/maps/api/staticmap?center=%center%&zoo
 type
   TfrmMain = class(TForm)
     GroupBox1: TGroupBox;
-    XPManifest1: TXPManifest;
     edtApi: TEdit;
     Label1: TLabel;
     GroupBox3: TGroupBox;
@@ -90,9 +89,11 @@ begin
   GlobalCEFApp.LocalesDirPath:=GlobalCEFApp.FrameworkDirPath+PathDelim+'locales';
 end;
 
-procedure TfrmMain.wmMapLoaded;
-var bitmap:TBitmap;
-begin
+procedure TfrmMain.wmMapLoaded;
+
+var bitmap:TBitmap;
+
+begin
  bitmap:=TBitmap.Create;
   try
    Chromium.TakeSnapshot(bitmap);
@@ -106,7 +107,8 @@ end;
   finally
    bitmap.Free;
   end;
-end;
+
+end;
 
 procedure TfrmMain.wmGeoSuccess;
 var temp:string;

@@ -142,7 +142,6 @@ object frmMain: TfrmMain
         Width = 173
         Height = 21
         TabOrder = 0
-        Text = '1 william st'
       end
       object edtLine2: TEdit
         Left = 60
@@ -157,7 +156,6 @@ object frmMain: TfrmMain
         Width = 173
         Height = 21
         TabOrder = 2
-        Text = 'perth'
       end
       object edtState: TEdit
         Left = 60
@@ -165,7 +163,6 @@ object frmMain: TfrmMain
         Width = 173
         Height = 21
         TabOrder = 3
-        Text = 'wa'
       end
       object edtPostecode: TEdit
         Left = 60
@@ -173,7 +170,6 @@ object frmMain: TfrmMain
         Width = 173
         Height = 21
         TabOrder = 4
-        Text = '6000'
       end
       object edtCountry: TEdit
         Left = 60
@@ -181,7 +177,6 @@ object frmMain: TfrmMain
         Width = 173
         Height = 21
         TabOrder = 5
-        Text = 'australia'
       end
     end
     object btnLoad: TButton
@@ -218,11 +213,7 @@ object frmMain: TfrmMain
       Height = 410
       Align = alClient
       TabOrder = 0
-      DoubleBuffered = False
     end
-  end
-  object XPManifest1: TXPManifest
-    Left = 32
   end
   object cefRequest: TCEFUrlRequestClientComponent
     OnDownloadData = cefRequestDownloadData
