@@ -1,1 +1,1 @@
-https://cef-builds.spotifycdn.com/index.html#windows32
+https://cef-builds.spotifycdn.com/index.html
